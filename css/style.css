@@ -1,0 +1,105 @@
+body {
+    /* margin para que quede pegado a los bordes de página */
+    margin: 0;
+    padding-top: 5rem;
+}
+
+.menu {
+      display: none;  
+}
+
+.cabecera {
+    background: rgb(244, 244, 244);
+    text-emphasis-color: rgb(160, 160, 160);
+    color: rgb(39, 39, 39);
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    position: fixed; /*para que se quede fija*/
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+.cabecera ul {
+    margin-top: 0;
+    padding: 0;
+    float: right;
+}
+    .cabecera ul li {
+    /* display: inline-block; sirve para poner los elementos de esa lista en una linea en vez de en bloque */
+    display: inline-block;
+    /* padding sirve para cambiar el espacio que hay entre cada <li> */
+    padding: 1rem;
+    }
+
+        .cabecera ul li a {
+            display: block;
+            padding: 0.5rem;
+            color: rgb(98, 98, 98);
+            list-style: none;
+            text-decoration: none;
+            /* para que aparezca poco a poco */
+            transition: all 0.3s linear;
+        }
+
+            .cabecera ul li a:hover {
+                background-color: rgb(91, 91, 91);
+                color: aliceblue;
+                border-radius: 10px;
+            }
+.logo_cabecera {
+    width: 100px;
+}
+
+/* DE AQUÍ HACIA ABAJO VA LO PRINCIPAL*/
+
+.principal {
+    align-items: center;
+    text-align: justify;
+    margin: 10%;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    margin: 0;
+    background-color: rgb(244, 244, 244);
+    padding: 3%;
+}
+
+/*responsive*/
+
+@media only screen and (max-width: 320px) {
+
+    .menu {
+        display: block;
+        padding: 20%;
+        cursor: pointer;
+  }
+
+        .cabecera ul li {
+        /* display: inline-block; sirve para poner los elementos de esa lista en una linea en vez de en bloque */
+        display: block;
+        /* padding sirve para cambiar el espacio que hay entre cada <li> */
+        padding: 1rem;
+        }
+    
+            .cabecera ul li a {
+                display: block;
+                padding: 0rem;
+                color: rgb(98, 98, 98);
+                list-style: none;
+                text-decoration: none;
+                /* para que aparezca poco a poco */
+                transition: all 0.3s linear;
+            }
+    
+                .cabecera ul li a:hover {
+                    background-color: rgb(91, 91, 91);
+                    color: aliceblue;
+                    border-radius: 10px;
+                }
+    .logo_cabecera {
+        width: 100px;
+    }
